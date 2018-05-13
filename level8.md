@@ -1,4 +1,4 @@
-# Total Completed: 1
+# Total Completed: 3
 
 ## Check your arrows
 
@@ -15,5 +15,29 @@ The expected result is a boolean, indicating whether you have any good arrows le
 ```javascript
 function anyArrows(arrows) {
   return arrows.some(elem => elem.damaged !== true);
+}
+```
+
+## Multiply
+
+https://www.codewars.com/kata/multiply/train/javascript
+
+Multiply two numbers.
+
+```javascript
+function multiply(a, b) {
+  return a * b;
+}
+```
+
+## Even or Odd
+
+https://www.codewars.com/kata/even-or-odd
+
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+```javascript
+function even_or_odd(number) {
+  return number % 2 === 1 || number % 2 === -1 ? "Odd" : "Even";
 }
 ```
