@@ -38,6 +38,7 @@ Create a function that takes an integer as an argument and returns "Even" for ev
 
 ```javascript
 function even_or_odd(number) {
-  return number % 2 === 1 || number % 2 === -1 ? "Odd" : "Even";
+  return number % 2 === 0 ? "Even" : "Odd";
+  //  return number % 2 === 1 || number % 2 === -1 ? "Odd" : "Even";
 }
 ```
