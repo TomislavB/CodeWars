@@ -1,4 +1,4 @@
-# Total Completed: 3
+# Total Completed: 4
 
 ## Check your arrows
 
@@ -25,9 +25,10 @@ https://www.codewars.com/kata/multiply/train/javascript
 Multiply two numbers.
 
 ```javascript
-function multiply(a, b) {
-  return a * b;
-}
+// function multiply(a, b) {
+//   return a * b;
+// }
+const multiply = (a, b) => a * b;
 ```
 
 ## Even or Odd
@@ -40,5 +41,31 @@ Create a function that takes an integer as an argument and returns "Even" for ev
 function even_or_odd(number) {
   return number % 2 === 0 ? "Even" : "Odd";
   //  return number % 2 === 1 || number % 2 === -1 ? "Odd" : "Even";
+}
+```
+
+## Counting Sheep
+
+https://www.codewars.com/kata/counting-sheep-dot-dot-dot
+
+Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+For example,
+
+```javascript
+[true, true, true, false, true, true, true, true, false];
+```
+
+The correct answer would be 7.
+
+```javascript
+function countSheeps(arrayOfSheep) {
+  var trueCounter = 0;
+  for (i = 0; i <= arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] === true) {
+      trueCounter++;
+    }
+  }
+  return trueCounter;
 }
 ```
