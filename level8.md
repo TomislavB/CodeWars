@@ -1,4 +1,4 @@
-# Total Completed: 4
+# Total Completed: 5
 
 ## Check your arrows
 
@@ -13,9 +13,7 @@ If an arrow in the quiver does not have a damaged status, it means it's new.
 The expected result is a boolean, indicating whether you have any good arrows left.
 
 ```javascript
-function anyArrows(arrows) {
-  return arrows.some(elem => elem.damaged !== true);
-}
+const anyArrows = arrows => arrows.some(arrow => !arrow.damaged);
 ```
 
 ## Multiply
@@ -25,9 +23,6 @@ https://www.codewars.com/kata/multiply/train/javascript
 Multiply two numbers.
 
 ```javascript
-// function multiply(a, b) {
-//   return a * b;
-// }
 const multiply = (a, b) => a * b;
 ```
 
@@ -40,7 +35,6 @@ Create a function that takes an integer as an argument and returns "Even" for ev
 ```javascript
 function even_or_odd(number) {
   return number % 2 === 0 ? "Even" : "Odd";
-  //  return number % 2 === 1 || number % 2 === -1 ? "Odd" : "Even";
 }
 ```
 
@@ -67,5 +61,28 @@ function countSheeps(arrayOfSheep) {
     }
   }
   return trueCounter;
+}
+```
+
+## String Repeat
+
+https://www.codewars.com/kata/string-repeat
+
+Write a function called repeatStr which repeats the given string string exactly n times.
+
+```javascript
+repeatStr(6, "I"); // "IIIIII"
+repeatStr(5, "Hello"); // "HelloHelloHelloHelloHello"
+```
+
+Solution:
+
+```javascript
+function repeatStr(n, s) {
+  var a = "";
+  for (i = 0; i < n; i++) {
+    a = a + s;
+  }
+  return a;
 }
 ```
