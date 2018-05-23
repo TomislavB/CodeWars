@@ -86,3 +86,15 @@ function repeatStr(n, s) {
   return a;
 }
 ```
+
+## Love Message
+
+https://www.codewars.com/kata/jennys-secret-message
+
+Write a function that returns a string "Johnny, my love" if the name entered is Johnny and if other name is entered function returns "Hello, ${name}!
+
+Solution:
+
+```javascript
+const greet = name => "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+```
