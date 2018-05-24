@@ -1,4 +1,4 @@
-# Total Completed: 5
+# Total Completed: 7
 
 ## Check your arrows
 
@@ -97,4 +97,22 @@ Solution:
 
 ```javascript
 const greet = name => "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+```
+
+## Grasshopper - Summation
+
+https://www.codewars.com/kata/grasshopper-summation
+
+Write a program that finds the summation of every number between 1 and num. The number will always be a positive integer greater than 0.
+
+Solution:
+
+```javascript
+var summation = function(num) {
+  var sum = 0;
+  for (i = 1; i <= num; i++) {
+    sum = sum + i;
+  }
+  return sum;
+};
 ```
