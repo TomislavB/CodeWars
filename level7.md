@@ -1,4 +1,4 @@
-# Total Competed: 3
+# Total Competed: 4
 
 ## Highest and Lowest number
 
@@ -92,5 +92,19 @@ function openOrSenior(data) {
   return data.map(
     ([age, handicap]) => (age > 54 && handicap > 7 ? "Senior" : "Open")
   );
+}
+```
+
+## Binary Addition
+
+https://www.codewars.com/kata/551f37452ff852b7bd000139
+
+Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+
+The binary number returned should be a string.
+
+```javascript
+function addBinary(a, b) {
+  return (a + b).toString(2);
 }
 ```
