@@ -108,3 +108,34 @@ function addBinary(a, b) {
   return (a + b).toString(2);
 }
 ```
+
+
+## Anagram Detection
+
+https://www.codewars.com/kata/529eef7a9194e0cbc1000255/train/javascript
+
+An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
+
+Note: anagrams are case insensitive
+
+Write the function to return true if the two arguments given are anagrams of each other; return false otherwise.
+
+```javascript
+let isAnagram = (test, original) => { 
+  return sortStringCharacters(test) == sortStringCharacters(original);
+};
+
+let sortStringCharacters = string => {
+  return string.toLowerCase().split('').sort().join('');
+}
+
+//Simple tests
+Test.assertEquals(isAnagram("foefet", "toffee"), true, 'The word foefet is an anagram of toffee')
+Test.assertEquals(isAnagram("Buckethead", "DeathCubeK"), true, 'The word Buckethead is an anagram of DeathCubeK')
+Test.assertEquals(isAnagram("Twoo", "WooT"), true, 'The word Twoo is an anagram of WooT')
+
+Test.assertEquals(isAnagram("dumble", "bumble"), false, 'Characters do not match for test case dumble, bumble')
+Test.assertEquals(isAnagram("ound", "round"), false, 'Missing characters for test case ound, round')
+Test.assertEquals(isAnagram("apple", "pale"), false, 'Same letters, but different count')
+```
+
